@@ -6,11 +6,11 @@ const Button = ({ name }) => {
   const { selection, products } = useContext(DataContext);
   //
   function conclusion() {
-    const most = "";
+    const most = products.filter((product) => product.cost >= 2100);
     const ligth = products.filter((product) => product.cost <= 1000);
     const Highest = products.filter((product) => product.cost >= 1100);
     //
-    switch (name) { 
+    switch (name) {
       case "Most recent":
         return most;
       case "Lowest price":

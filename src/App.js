@@ -42,7 +42,14 @@ function App() {
   useEffect(() => {
     receiveProducts();
     receiveUser();
-  }, [user]);
+
+    const clear = setInterval(() => {
+      return receiveUser();
+    }, 100);
+    return () => {
+      clearInterval(clear);
+    };
+  }, []);
 
   function isSelection(datas) {
     setObject({

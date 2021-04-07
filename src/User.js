@@ -17,7 +17,7 @@ const User = () => {
   async function AumentPoints() {
     const waitAumentPoints = await peticionAumentPoints(points);
     setPoints(points + 1000);
-    console.log(waitAumentPoints);
+    alert("You auments 1000 points!!!!");
     return waitAumentPoints;
   }
 

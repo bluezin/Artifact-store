@@ -49,7 +49,7 @@ const History = ({ viewHistory }) => {
             })
             .reverse()}
           {history.length !== 0 && (
-            <button className="button-util" onClick={viewHistory}>
+            <button className="button-util add-button-util" onClick={viewHistory}>
               Cancel
             </button>
           )}

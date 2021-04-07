@@ -1,0 +1,13 @@
+.Hero img {
+  max-width: 100vw;
+}
+
+.Hero h1 {
+  color: white;
+  margin: 20px;
+  position: absolute;
+  top: 300px;
+}
+
+@media screen and (min-width: 400px) {
+}

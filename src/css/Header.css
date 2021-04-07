@@ -1,0 +1,74 @@
+header img {
+  margin: auto 10px;
+}
+.User {
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
+.div-User {
+  background-color: #e7e5e5;
+  border-radius: 13px;
+  margin: 10px 10px;
+  padding: 0px 12px;
+  height: 35px;
+  width: 60px;
+}
+
+.div-User img {
+  width: 25px;
+  margin: auto 5px;
+}
+/*  */
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked ~ .open-modal {
+  display: block;
+}
+
+label[for="eye"] {
+  background: url("../images/eye-regular.svg") no-repeat;
+  width: 20px;
+  height: 30px;
+  display: block;
+  margin-top: 19px;
+  margin-right: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.open-modal {
+  display: none;
+  font-family: monospace;
+  font-size: 16px;
+  padding: 30px;
+  padding-bottom: 50px;
+  position: absolute;
+  right: 0px;
+  background-color: white;
+  user-select: none;
+  margin-top: 3px;
+  border-bottom-left-radius: 10px;
+}
+
+.open-modal h2 {
+  text-align: center;
+  color: rgb(70, 89, 129);
+}
+
+.open-modal p {
+  font-weight: bold;
+}
+
+.open-modal span {
+  color: rgb(70, 89, 129);
+}
+
+.button-points {
+  background-color: rgb(81, 81, 250);
+  margin-top: 10px;
+}

@@ -1,0 +1,78 @@
+.History {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: -40px;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.div-history {
+  background-color: white;
+  padding: auto 30px;
+  overflow-y: scroll;
+  border-radius: 12px;
+  border: 5px solid rgb(231, 223, 223);
+  font-family: monospace;
+  margin: 60px;
+}
+
+.div-sub-history {
+  text-align: center;
+}
+
+.div-history-emergent {
+  text-align: center;
+}
+
+.h3-history {
+  font-size: 20px;
+  margin: 20px;
+  font-weight: bold;
+}
+
+.p-rendeem {
+  font-size: 30px;
+  margin-top: 100px;
+}
+
+.button-util {
+  outline: none;
+  border: none;
+  background-color: rgb(35, 210, 216);
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px;
+  width: 160px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.div-user-history {
+  background-color: rgb(35, 210, 216);
+  padding: 6px;
+  margin: 10px;
+  border-radius: 5px;
+  list-style-type: lower-greek;
+}
+
+.div-user-history p {
+  font-size: 14px;
+}
+
+.div-history p small {
+  font-size: 15px;
+  color: white;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 800px) {
+  .div-history {
+    width: 420px;
+    margin: 80px;
+  }
+}

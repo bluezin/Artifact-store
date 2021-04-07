@@ -1,0 +1,145 @@
+.Container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* BUY */
+
+.Buy {
+  border-top: 2px solid #d8cdcd;
+  border-bottom: 2px solid #d8cdcd;
+  margin: 10px 8px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.div-Buy {
+  border-radius: 2px;
+  box-shadow: 1px 0px 6px rgb(199, 195, 195);
+  margin: 30px auto;
+  max-width: 400px;
+  max-height: auto;
+}
+
+.div-sub-buy {
+  border-bottom: 2px solid rgb(224, 219, 219);
+  margin: auto 14px;
+}
+
+.img-Buy {
+  width: 150px;
+  margin: 0 30px;
+}
+
+.type-buy {
+  color: #9e9898;
+  margin: 20px 10px;
+  font-size: 13px;
+}
+
+.name-buy {
+  margin: 20px 10px;
+  font-size: 15px;
+}
+
+.buy-blue {
+  width: 30px;
+  height: 30px;
+  background: url("../images/buy-blue.svg");
+  background-size: contain;
+  margin: 10px 7px;
+  position: relative;
+  left: 180px;
+  cursor: pointer;
+}
+
+.add-div-buy {
+  transform: scale(1.1);
+  background-color: rgb(20, 211, 236);
+  cursor: auto;
+}
+
+.add-div-buy .div-sub-buy {
+  border: none;
+  opacity: 0.3;
+}
+
+.add-div-buy p {
+  opacity: 0.3;
+}
+
+.add-div-buy .buy-blue {
+  background-image: url("../images/buy-white.svg");
+}
+
+.add-div-buy .div-three-buy {
+  display: flex;
+}
+
+.div-three-buy {
+  position: absolute;
+  margin: auto;
+  right: 0;
+  left: 0;
+  display: none;
+  top: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.h2-costo {
+  color: white;
+  font-weight: 500;
+}
+
+.h2-costo::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url("../images/coin.svg") no-repeat;
+  background-size: contain;
+  position: absolute;
+  right: 50px;
+  top: 97px;
+}
+
+.redeem-button {
+  border: none;
+  outline: none;
+  padding: 10px;
+  background-color: white;
+  width: 180px;
+  border-radius: 15px;
+  cursor: pointer;
+  color: #554e4e;
+}
+
+.div-emenrgent-need {
+  background-color: rgb(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  color: white;
+  max-width: 140px;
+  font-size: 12px;
+  margin: 7px;
+  position: relative;
+  left: 75px;
+  padding: 2px;
+}
+
+.div-emenrgent-need img {
+  width: 25px;
+  margin: auto 5px;
+}
+
+@media screen and (min-width: 1100px) {
+  .Buy {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

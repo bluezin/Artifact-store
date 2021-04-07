@@ -1,0 +1,53 @@
+.Information {
+  font-size: 13px;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Information small {
+  color: #888888;
+  font-size: 13px;
+}
+
+.section-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 170px);
+  justify-content: center;
+  justify-items: center;
+}
+
+.p-information {
+  color: #554e4e;
+}
+
+.arrow {
+  cursor: pointer;
+  margin: 0 4px;
+}
+
+.section-arrows {
+  position: absolute;
+  right: 20px;
+}
+
+@media screen and (min-width: 800px) {
+  .div-inforamtion {
+    display: flex;
+    align-items: center;
+  }
+
+  .Information small::before {
+    content: "";
+    margin: 8px;
+    border-left: 2px solid #d8cdcd;
+  }
+
+  .section-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .section-arrows {
+    position: initial;
+  }
+}

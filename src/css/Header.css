@@ -30,6 +30,10 @@ input[type="checkbox"]:checked ~ .open-modal {
   display: block;
 }
 
+input[type="checkbox"]:checked ~ label[for="eye"] {
+  background: url("../images/eye-slash-regular.svg") no-repeat;
+}
+
 label[for="eye"] {
   background: url("../images/eye-regular.svg") no-repeat;
   width: 20px;

@@ -18,6 +18,7 @@ const Buy = ({ data }) => {
 
   async function SendData(dataSend) {
     const waitRendeem = await peticionPostRendem(dataSend);
+    alert("Bought!!!!");
     console.log(waitRendeem);
   }
 

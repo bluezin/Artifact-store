@@ -15,6 +15,7 @@ function App() {
     before: 0,
     loading: true,
     modific: false,
+    buy: false,
   });
 
   async function receiveUser() {
@@ -35,6 +36,7 @@ function App() {
         after: 16,
         before: 0,
         loading: false,
+        buy: false,
       });
     } catch {}
   }
@@ -42,14 +44,7 @@ function App() {
   useEffect(() => {
     receiveProducts();
     receiveUser();
-
-    const clear = setInterval(() => {
-      return receiveUser();
-    }, 100);
-    return () => {
-      clearInterval(clear);
-    };
-  }, []);
+  }, [object.buy]);
 
   function isSelection(datas) {
     setObject({
@@ -65,12 +60,14 @@ function App() {
         after: 16,
         before: 0,
         modific: false,
+        buy: false,
       });
     }
     setObject({
       data: products.slice(before, after),
       after: after,
       before: before,
+      buy: false,
     });
   }
 
@@ -78,13 +75,15 @@ function App() {
     <div className="App">
       <DataProvider
         value={{
-          user: user,
-          products: products,
+          user,
+          products,
+          setObject: setObject,
           state: {
             after: object.after,
             before: object.before,
             data: object.data,
             loading: object.loading,
+            buy: object.buy,
           },
           selection: isSelection,
           slide: isSlide,

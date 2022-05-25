@@ -6,7 +6,7 @@ import coin from "./images/coin.svg";
 
 const Buy = ({ data }) => {
   const [buy, setBuy] = useState([]);
-  const { user, state } = useContext(DataContext);
+  const { user, state, setObject } = useContext(DataContext);
   //
   async function handleOpen(name, cost) {
     let arrayName = [];
@@ -17,9 +17,9 @@ const Buy = ({ data }) => {
   }
 
   async function SendData(dataSend) {
-    const waitRendeem = await peticionPostRendem(dataSend);
+    await peticionPostRendem(dataSend);
     alert("Bought!!!!");
-    console.log(waitRendeem);
+    setObject({ ...state, buy: true });
   }
 
   return (
